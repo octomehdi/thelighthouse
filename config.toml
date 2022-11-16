@@ -1,0 +1,93 @@
+baseURL = "http://localhost:1313/thesearch"
+title = "The Search"
+
+theme = "puppet"
+
+copyright = ""
+paginate = 10
+languageCode = "en"
+defaultContentLanguage = "en"
+
+hasCJKLanguage = false
+enableInlineShortcodes = true
+enableEmoji = true
+# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
+# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
+ignoreErrors = ["error-remote-getjson"]
+
+disqusShortname = ""
+googleAnalytics = ""
+
+[outputs]
+home = ["HTML", "JSON", "RSS"]
+
+# prevent build failures when using Hugo's template _internal/opengraph.html 
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[markup]
+[markup.highlight]
+noClasses = true
+codeFences = true
+guessSyntax = true
+lineNos = true
+lineNumbersInTable = false
+style = "dracula"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[menu]
+[[menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = -100
+[[menu.main]]
+identifier = "archive"
+name = "Archive"
+url = "/archive/"
+weight = 20
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 50
+
+
+[params]
+author = "Mehdi Chajadine"
+description = "Those beacons of light, in an otherwise black and hopeless night, that reassure the lonely mariner they are not forgotten and will soon find land and home. And hope."
+keywords = "blog,developer,personal"
+img_home = "img/lighthouse.jpg"
+img_404 = "img/404-bg.jpg"
+
+useFaviconGenerator = false
+
+custom_js = []
+custom_css = [] # ["css/custom.css"]  Add your file to assets folder  [assets/css/custom.css]
+
+[params.sidebar]
+enable = true
+gravatarEmail = ""
+# Overwritten by your gravatar image if `gravatarEmail` is filled
+
+
+[params.social]
+rss_enable = true
+twitter = "octomehdi"
+github = "octomehdi"
+linkedin = "mehdichajadine"
+
+# See https://giscus.app/
+[params.giscus]
+enable = true
+repo = "roninro/hugo-theme-puppet"
+repo_id = "R_kgDOHuvyhw"
+category = "General"
+category_id = "DIC_kwDOHuvyh84CQjDo"
+input_position = "top"
+theme = "light_tritanopia"
+lang = "en"

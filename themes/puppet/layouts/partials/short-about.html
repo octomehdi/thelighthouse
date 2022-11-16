@@ -1,0 +1,9 @@
+
+<section class="visible-md visible-lg">
+  <hr>
+  {{ $sidebar := .Site.Params.sidebar }}
+  <div class="short-about">
+    <!-- SNS Link -->
+    {{ partial "sns-links.html" (dict "center" false "social" .Site.Params.social ) }}
+  </div>
+</section>
