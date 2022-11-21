@@ -1,10 +1,10 @@
-baseURL = "http://localhost:1313/thesearch"
-title = "The Search"
+baseURL = "http://localhost:1313/thelighthouse"
+title = "The Lighthouse"
 
 theme = "puppet"
 
 copyright = ""
-paginate = 10
+paginate = 5
 languageCode = "en"
 defaultContentLanguage = "en"
 
@@ -84,10 +84,10 @@ linkedin = "mehdichajadine"
 # See https://giscus.app/
 [params.giscus]
 enable = true
-repo = "roninro/hugo-theme-puppet"
-repo_id = "R_kgDOHuvyhw"
-category = "General"
-category_id = "DIC_kwDOHuvyh84CQjDo"
+repo = "octomehdi/thelighthouse"
+repo_id = "R_kgDOIcpNGQ"
+category = "Comments"
+category_id = "DIC_kwDOIcpNGc4CSrW1"
 input_position = "top"
 theme = "light_tritanopia"
 lang = "en"
